@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.profile_weather_box{
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+}
+
+.profile_3_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    flex-shrink: 1;
+}
+
+.toggle_btn{
+    padding: 1em 2.2em;
+    color: #fff;
+    background-color: #148A08;
+    border: 1px solid ;
+    border-radius: 32px;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+}
+
+@media screen and (max-width: 800px){
+    .profile_weather_box{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .profile_3_box{
+        width: 100%;
+    }
+}
